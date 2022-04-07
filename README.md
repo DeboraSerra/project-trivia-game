@@ -2,12 +2,12 @@
 
 Esse projeto foi desenvolvido utilizando as metodologias ágeis por:
 
-* [Alexsandro Pinheiro]();
-* [Débora Serra]();
-* [João Victor Soares]();
-* [Maycon Oliveira]();
-* [Vanessa Santos]();
-* [Matheus Vital]();
+* [Alexsandro Pinheiro](https://github.com/Alexsandro-01);
+* [Débora Serra](https://github.com/DeboraSerra);
+* [João Victor Soares](https://github.com/jvsoarez);
+* [Maycon Oliveira](https://github.com/1mayk);
+* [Vanessa Santos](https://github.com/VanehSann);
+* [Matheus Vital](https://github.com/VitalMatheus);
 
 Abaixo se encontra a UI da aplicação.
 
@@ -25,12 +25,12 @@ Como requisito não avaliativo, fomos orientados a desenvolver uma página de co
 
 This project was developed using the agile methodologies by:
 
-* [Alexsandro Pinheiro]();
-* [Débora Serra]();
-* [João Victor Soares]();
-* [Maycon Oliveira]();
-* [Vanessa Santos]();
-* [Matheus Vital]();
+* [Alexsandro Pinheiro](https://github.com/Alexsandro-01);
+* [Débora Serra](https://github.com/DeboraSerra);
+* [João Victor Soares](https://github.com/jvsoarez);
+* [Maycon Oliveira](https://github.com/1mayk);
+* [Vanessa Santos](https://github.com/VanehSann);
+* [Matheus Vital](https://github.com/VitalMatheus);
 
 In this project we were oriented to develop an application using a trivia game API, where the user can access by typing the name and email. After clicking on play, the user have 30 seconds to answer the question or the buttons will be disabled and the user must start over again.
 
