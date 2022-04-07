@@ -11,7 +11,7 @@ Esse projeto foi desenvolvido utilizando as metodologias ágeis por:
 
 Abaixo se encontra a UI da aplicação.
 
-![Exemplo de usabilidade da aplicação| Exemple of the application usability]()
+![Exemplo de usabilidade da aplicação| Exemple of the application usability](https://github.com/DeboraSerra/project-trivia-game/blob/master/project-trivia.gif)
 
 Nesse projeto fomos orientados a desenvolver uma aplicação consumindo uma API de jogo de trivia, onde a pessoa usuária possa acessar digitando nome e email. Após clicar no play a pessoa usuária tem 30 segundos para responder a pergunta, senão os botões são desabilitados e o jogo deve ser começado novamente.
 
