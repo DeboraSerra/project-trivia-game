@@ -130,6 +130,7 @@ class Game extends Component {
   render() {
     const { results, index, timer, answers, correctAnswer,
       wrongAnswers, answerSelected } = this.state;
+    const { history } = this.props;
     return (
       <>
         <Header />
@@ -177,6 +178,15 @@ class Game extends Component {
                 data-testid="btn-next"
               >
                 Próximo
+              </button>
+            )}
+            {timer === 0 && (
+              <button
+                className="btn-next"
+                type="button"
+                onClick={ () => history.push('/project-trivia-game/') }
+              >
+                Play Again
               </button>
             )}
           </div>
