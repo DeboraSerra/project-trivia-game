@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Header from '../Components/Header';
 import { fetchApi } from '../Services/fetchApi';
-import { setScore } from '../Redux/Actions';
+import { setScore, zeroScore } from '../Redux/Actions';
 import '../Styles/Game.css';
 
 class Game extends Component {
@@ -127,10 +127,15 @@ class Game extends Component {
     }
   }
 
+  backToLogin = () => {
+    const { history, dispatch } = this.props;
+    dispatch(zeroScore(0));
+    history.push('/project-trivia-game/')
+  }
+
   render() {
     const { results, index, timer, answers, correctAnswer,
       wrongAnswers, answerSelected } = this.state;
-    const { history } = this.props;
     return (
       <>
         <Header />
@@ -184,7 +189,7 @@ class Game extends Component {
               <button
                 className="btn-next"
                 type="button"
-                onClick={ () => history.push('/project-trivia-game/') }
+                onClick={ this.backToLogin }
               >
                 Play Again
               </button>
