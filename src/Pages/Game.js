@@ -6,6 +6,8 @@ import { fetchApi } from '../Services/fetchApi';
 import { setScore, zeroScore } from '../Redux/Actions';
 import '../Styles/Game.css';
 
+const he = require('he');
+
 class Game extends Component {
   constructor() {
     super();
@@ -43,14 +45,14 @@ class Game extends Component {
   // Recebe array de questões
   randomBtns = (asks) => {
     // Questões erradas;
-    const quest = asks.incorrect_answers;
+    const quest = asks.incorrect_answers.map(item => he.decode(item));
     // Todas as questões;
-    const questes = [...quest, asks.correct_answer];
+    const questes = [...quest, he.decode(asks.correct_answer)];
     const RANDOM = 0.5;
     const sorted = questes.sort(() => Math.random() - RANDOM);
     // Salva questões corretas e incorretas no estado
     this.setState({ answers: sorted,
-      correctAnswer: asks.correct_answer,
+      correctAnswer: he.decode(asks.correct_answer),
       wrongAnswers: quest });
   }
 
@@ -149,7 +151,7 @@ class Game extends Component {
                     <h3 data-testid="question-category">{ results[index].category }</h3>
                     <article>
                       <p data-testid="question-text">
-                        { results[index].question }
+                        { he.decode(results[index].question) }
                       </p>
                     </article>
                   </div>
